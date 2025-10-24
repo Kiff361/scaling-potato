@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма опроса</title>
+            <link rel= 'stylesheet' href="/static/style.css" />
+
+</head>
+<body>
+<div class="container">
+
+        <h2>Добро пожаловать, {{ email }}!</h2>
+        <p>Пожалуйста, ответьте на вопросы </p>
+        <form method="post">
+                <label>Ваше любимое время суток:</label><br />
+                <input type="radio" name="favorite_time" value="Утро" required /> Утро<br />
+                <input type="radio" name="favorite_time" value="День" /> День<br />
+                <input type="radio" name="favorite_time" value="Вечер" /> Вечер<br />
+                <input type="radio" name="favorite_time" value="ночь" /> Ночь<br /><br />
+
+                <label>Ваш любимый сезон:</label><br />
+                <input type="radio" name="favorite_season" value="Зима" required /> Зима<br />
+                <input type="radio" name="favorite_season" value="Весна" /> Весна<br />
+                <input type="radio" name="favorite_season" value="Лето" /> Лето<br />
+                <input type="radio" name="favorite_season" value="Осень" /> Осень<br /><br />
+
+                <label>Твоя любимая игра:</label><br />
+                <input type="text" name="favorite_game" placeholder="Введи свою любимую игру или Велики Китайски Республик будет захвачен" required /><br /><br />
+
+                <label> твои любимые страны:</label><br />
+                <input type="checkbox" name="favorite_country" value="Велики_Китай" required />Велики_Китай <br />
+                <input type="checkbox" name="favorite_country" value="Плохи_Индус"  />Плохи_Индус <br />
+                <input type="checkbox" name="favorite_country" value="КрасивиШвейцари"  />КрасивиШвейцари <br />
+                <input type="checkbox" name="favorite_country" value="ДурацкиРусски"  />ДурацкиРусски <br />
+                <input type="checkbox" name="favorite_country" value="Японски " required />Японски <br /><br />
+
+                <button type="submit">Отправить</button>
+
+</form>
+
+
+
+
+</div>
+</body>
+</html>
